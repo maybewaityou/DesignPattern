@@ -8,7 +8,25 @@
 
 import Foundation
 
-
+/**
+ 原型模式
+ */
+func prototype() {
+    let originDocument = WordDocument()
+    originDocument.text = "document 1"
+    originDocument.addImage("image 1")
+    originDocument.addImage("image 2")
+    originDocument.addImage("image 3")
+    
+    originDocument.showDocument()
+    
+    let targetDocument = originDocument.copy() as! WordDocument
+    targetDocument.showDocument()
+    targetDocument.text = "document 2"
+    targetDocument.addImage("image 4")
+    targetDocument.showDocument()
+    originDocument.showDocument()
+}
 
 /**
  建造者模式
