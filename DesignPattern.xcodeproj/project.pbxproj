@@ -17,6 +17,11 @@
 		60BC56CA1D25044100D0AF5C /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BC56C91D25044100D0AF5C /* Product.swift */; };
 		60BC56CC1D25048600D0AF5C /* ConcreteFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BC56CB1D25048600D0AF5C /* ConcreteFactory.swift */; };
 		60BC56CE1D25050200D0AF5C /* ConcreteProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BC56CD1D25050200D0AF5C /* ConcreteProduct.swift */; };
+		60BC56D11D25071100D0AF5C /* CalculateStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BC56D01D25071100D0AF5C /* CalculateStrategy.swift */; };
+		60BC56D31D25075600D0AF5C /* BusStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BC56D21D25075600D0AF5C /* BusStrategy.swift */; };
+		60BC56D51D25089E00D0AF5C /* SubwayStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BC56D41D25089E00D0AF5C /* SubwayStrategy.swift */; };
+		60BC56D71D25093C00D0AF5C /* TranficCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BC56D61D25093C00D0AF5C /* TranficCalculator.swift */; };
+		60BC56D91D250B7B00D0AF5C /* TaxiStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BC56D81D250B7B00D0AF5C /* TaxiStrategy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +48,11 @@
 		60BC56C91D25044100D0AF5C /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		60BC56CB1D25048600D0AF5C /* ConcreteFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcreteFactory.swift; sourceTree = "<group>"; };
 		60BC56CD1D25050200D0AF5C /* ConcreteProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcreteProduct.swift; sourceTree = "<group>"; };
+		60BC56D01D25071100D0AF5C /* CalculateStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateStrategy.swift; sourceTree = "<group>"; };
+		60BC56D21D25075600D0AF5C /* BusStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStrategy.swift; sourceTree = "<group>"; };
+		60BC56D41D25089E00D0AF5C /* SubwayStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubwayStrategy.swift; sourceTree = "<group>"; };
+		60BC56D61D25093C00D0AF5C /* TranficCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranficCalculator.swift; sourceTree = "<group>"; };
+		60BC56D81D250B7B00D0AF5C /* TaxiStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxiStrategy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +85,7 @@
 		60BC56AF1D24EFE900D0AF5C /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				60BC56CF1D2506E300D0AF5C /* Strategy */,
 				60BC56C61D2503E800D0AF5C /* Factory */,
 				60BC56C31D2500DE00D0AF5C /* Prototype */,
 				60BC56B71D24F05800D0AF5C /* Singleton */,
@@ -119,6 +130,18 @@
 				60BC56CD1D25050200D0AF5C /* ConcreteProduct.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		60BC56CF1D2506E300D0AF5C /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				60BC56D01D25071100D0AF5C /* CalculateStrategy.swift */,
+				60BC56D21D25075600D0AF5C /* BusStrategy.swift */,
+				60BC56D41D25089E00D0AF5C /* SubwayStrategy.swift */,
+				60BC56D81D250B7B00D0AF5C /* TaxiStrategy.swift */,
+				60BC56D61D25093C00D0AF5C /* TranficCalculator.swift */,
+			);
+			path = Strategy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,12 +205,17 @@
 				60BC56CA1D25044100D0AF5C /* Product.swift in Sources */,
 				60BC56CC1D25048600D0AF5C /* ConcreteFactory.swift in Sources */,
 				60BC56B11D24EFE900D0AF5C /* main.swift in Sources */,
+				60BC56D91D250B7B00D0AF5C /* TaxiStrategy.swift in Sources */,
 				60BC56B91D24F06A00D0AF5C /* Singleton.swift in Sources */,
+				60BC56D71D25093C00D0AF5C /* TranficCalculator.swift in Sources */,
 				60BC56BE1D24F50800D0AF5C /* MacbookComputer.swift in Sources */,
 				60BC56C51D25012000D0AF5C /* WordDocument.swift in Sources */,
+				60BC56D11D25071100D0AF5C /* CalculateStrategy.swift in Sources */,
 				60BC56C21D24F80F00D0AF5C /* Builder.swift in Sources */,
+				60BC56D31D25075600D0AF5C /* BusStrategy.swift in Sources */,
 				60BC56CE1D25050200D0AF5C /* ConcreteProduct.swift in Sources */,
 				60BC56C81D25040600D0AF5C /* Factory.swift in Sources */,
+				60BC56D51D25089E00D0AF5C /* SubwayStrategy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

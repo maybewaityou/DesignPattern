@@ -10,6 +10,15 @@ import Foundation
 
 
 
+/**
+ 策略模式
+ */
+func strategy() {
+    let calculator = TranficCalculator()
+    calculator.strategy = TaxiStrategy()
+    let price = calculator.calculatePrice(4)
+    print("=====>>>> \(price)")
+}
 
 /**
  工厂模式
