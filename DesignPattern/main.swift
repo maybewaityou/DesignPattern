@@ -11,6 +11,21 @@ import Foundation
 
 
 /**
+ 责任链模式
+ */
+func chainOfResponsibility() {
+    let groupLeader = GroupLeader()
+    let director = Director()
+    let manager = Manager()
+    let boss = Boss()
+    groupLeader.nextHandler = director
+    director.nextHandler = manager
+    manager.nextHandler = boss
+    
+    groupLeader.handleRequest(6000)
+}
+
+/**
  状态模式
  */
 func state() {
