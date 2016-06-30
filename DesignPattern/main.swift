@@ -11,6 +11,20 @@ import Foundation
 
 
 /**
+ 状态模式
+ */
+func state() {
+    let tvController = TVController()
+    tvController.powerOn()
+    tvController.nextChannel()
+    tvController.turnUp()
+    tvController.turnUp()
+    tvController.turnUp()
+    tvController.powerOff()
+    tvController.preChannel()
+}
+
+/**
  策略模式
  */
 func strategy() {
