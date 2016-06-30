@@ -11,6 +11,19 @@ import Foundation
 
 
 /**
+ 建造者模式
+ */
+func builder() {
+    let computer = Builder(computer: MacbookComputer())
+        .board("主板")
+        .display("显示器")
+        .OS("系统")
+        .build()
+    
+    computer.toString()
+}
+
+/**
  单例模式
  */
 func singleton() {
