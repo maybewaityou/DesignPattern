@@ -8,6 +8,18 @@
 
 import Foundation
 
+
+
+
+/**
+ 工厂模式
+ */
+func factory() {
+    let fac = ConcreteFactory()
+    let product = fac.createProduct()
+    product.method()
+}
+
 /**
  原型模式
  */
