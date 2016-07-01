@@ -11,6 +11,13 @@ import Foundation
 
 
 /**
+ 解释器模式
+ */
+func interpreter() {
+    
+}
+
+/**
  责任链模式
  */
 func chainOfResponsibility() {
